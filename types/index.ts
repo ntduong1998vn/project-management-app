@@ -1,4 +1,4 @@
-export * from "./systems";
+export * from "./entities";
 
 export interface HttpResponse<T> {
   statusCode: number;

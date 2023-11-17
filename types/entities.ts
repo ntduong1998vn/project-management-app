@@ -1,5 +1,21 @@
 export type ID = string;
 
+export type ProjectType = "Scrum" | "Kanban";
+
+export interface Project {
+  id: ID;
+  name: string;
+  description: string;
+  columns: Column[];
+  users: User[];
+  labels: Label[];
+  tasks: Task[];
+  projectType: ProjectType;
+  // comments: Comment[];
+  // attachments: Attachment[];
+  // activities: Activity[];
+}
+
 export interface TaskStatus {
   id: ID;
   name: string;

@@ -1,5 +1,7 @@
-import type { Task } from "~/types";
+import type { Project, Task } from "~/types";
 import HttpFactory from "../fetchFactory";
+import type { AsyncDataOptions } from "#app";
+import type { FetchOptions } from "ofetch";
 
 class ProjectRepository extends HttpFactory {
   private RESOURCE = "/projects";

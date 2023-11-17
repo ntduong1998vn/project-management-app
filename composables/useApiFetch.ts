@@ -1,10 +1,7 @@
 import type { UseFetchOptions } from "nuxt/app";
 import { defu } from "defu";
 
-export function useCustomFetch<T>(
-  url: string,
-  options: UseFetchOptions<T> = {}
-) {
+export function useApiFetch<T>(url: string, options: UseFetchOptions<T> = {}) {
   const userAuth = useCookie("token");
   const config = useRuntimeConfig();
 
